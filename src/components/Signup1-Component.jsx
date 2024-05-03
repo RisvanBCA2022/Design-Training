@@ -7,6 +7,8 @@ const Signup1Component = () => {
     <div className={styles.mainContainer}>
     <div className={styles.formContainer}>
     <div>
+
+    <div className={styles.heading}>
     <h1>Welcome to Design Community</h1>
     <span>Already have an account? <Link>Log in</Link></span>
 
@@ -21,14 +23,14 @@ const Signup1Component = () => {
       </label>
         <input type="text" id='username' />
         <label htmlFor="password">
-      Email
+      Password
       </label>
         <input type="password" id='password' />
         <div className={styles.checkbox}>
         <input type="checkbox" />
         <span>I want to receive emails about the product, feature updates, events, and marketing promotions.</span>
         </div>
-        <div>
+        <div className={styles.Policy}>
           By creating an account, you agree to the Terms of use and Privacy policy
         </div>
         <div>
@@ -36,6 +38,7 @@ const Signup1Component = () => {
         <input type="submit" name="" value="Create an account" id="" />
         </div>
     </form>
+    </div>
     </div>
     <div className={styles.imageContainer}>
     <img src={Signup1right} alt="" />
