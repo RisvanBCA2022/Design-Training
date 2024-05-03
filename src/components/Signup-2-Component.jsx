@@ -1,10 +1,13 @@
 import React from "react";
-import styles from "./signup1.module.scss";
-import Signup1right from "../assets/Signup1right.svg";
+import styles from "./signup2.module.scss";
+import Signup2 from "../assets/Signup2.svg";
 import { Link } from "react-router-dom";
-const Signup1Component = () => {
+const SignupComponent2 = () => {
   return (
     <div className={styles.mainContainer}>
+    <div className={styles.imageContainer}>
+        <img src={Signup2} alt="" />
+      </div>
       <div className={styles.formContainer}>
         <div>
           <div className={styles.heading}>
@@ -40,11 +43,9 @@ const Signup1Component = () => {
           </form>
         </div>
       </div>
-      <div className={styles.imageContainer}>
-        <img src={Signup1right} alt="" />
-      </div>
+      
     </div>
   );
 };
 
-export default Signup1Component;
+export default SignupComponent2;

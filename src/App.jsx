@@ -3,6 +3,7 @@ import './index.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Signup1 from './pages/Signup1'
+import Signup2 from './pages/Signup2'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signup1' element={<Signup1 />} />
+        <Route path='/signup2' element={<Signup2 />} />
       </Routes>
     </BrowserRouter>
     </>
