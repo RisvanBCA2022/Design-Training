@@ -1,7 +1,16 @@
 .heading{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 80px;
+    .loginLink{
+        text-decoration: none;
+        color: grey;
+    }
+    .loginLink:hover{
+        text-decoration: underline;
+        color: blue;
+    }
 }
 
 
@@ -14,7 +23,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 2rem;
+        padding-top: 5rem;
     
 
         width: 70%;
@@ -62,9 +71,15 @@
         color: rgb(2, 2, 2);
         
     }
+    input{
+        position: relative;
+        bottom: 1px;
+    }
 }
+
 .Policy{
     padding-top: 1.2 rem;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -76,16 +91,51 @@
     .imageContainer{
         display: none;
     }
-   
+   .heading{
+    align-items: center;
+    padding-left: 0;
+   }
+}
+.checkbox{
+    input{
+        bottom: 0 !important;
+    }
 }
 
 }
+
+@media only screen and (max-width: 800px) {
+    .checkbox{
+        input{
+            bottom: 10px !important;
+        }
+    }
+}
+@media only screen and (max-width: 1358px) {
+    .checkbox{
+        input{
+            bottom: 10px;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 550px) {
     .mainContainer{
         display: block;
+        h1{
+            text-align: center;
+        }
         .formContainer{
             width: 100%;
+            form{
+                padding-left: 1rem;
+                padding-right: 1rem;
+                .Submit{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
            
         }
         .imageContainer{
@@ -100,5 +150,9 @@
             
         }
     }
-    
+    .Policy{
+        font-size: .8rem;
     }
+    }
+
+    
