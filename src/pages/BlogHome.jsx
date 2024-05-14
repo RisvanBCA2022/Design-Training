@@ -10,7 +10,7 @@ const BlogHome = () => {
 
     ]
   return (
-    <div>
+    <div className='lg:px-14'>
         <h1 className='md:text-4xl sm:text-2xl lg:text-6xl text-center p-14'>
         <hr></hr>
         <span className='m-10 font-semibold'>
@@ -18,11 +18,16 @@ const BlogHome = () => {
         </span>
             <hr></hr>
         </h1>
-        <div className='flex'>
-            <div className='bg-red-400 h-20 w-1/2'> Blog1</div>
-            <div className='w-1/2'>
-            <div className='bg-orange-400 h-10'>Blog2</div>
-            <div className='bg-green-400 h-10'>Blog3</div>
+        <h3>Recent Blog Posts</h3>
+        <div className='flex gap-5'>
+            <div className='w-1/2 object-cover h-[50vh] rounded-sm border-2 p-4'> 
+            <img src={blogs[0].thumbnail} className='object-cover h-[40vh]' />
+            <p className='text-[#6941C6]'>sunday, 1 Jan 2023</p>
+            <h3 className='font-semibold '>{blogs[0].title}</h3>
+            </div>
+            <div className='w-1/2 p-4 h-[50vh]'>
+            <div className='bg-orange-400 h-1/2'>Blog2</div>
+            <div className='bg-green-400 h-1/2'>Blog3</div>
             </div>
             
         
