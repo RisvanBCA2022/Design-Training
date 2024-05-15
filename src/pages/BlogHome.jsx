@@ -1,4 +1,5 @@
 import React from "react";
+import CardsList from "../components/Cards/CardsList";
 
 const BlogHome = () => {
   const blogs = [
@@ -33,14 +34,14 @@ const BlogHome = () => {
   ];
   return (
     
-    <div className="">
+    <div className="lg:mx-28">
       <h1 className="md:text-4xl sm:text-2xl lg:text-6xl text-center p-14">
         <hr></hr>
         <span className="m-10 font-semibold">SCRIBEWAY BLOGS</span>
         <hr></hr>
       </h1>
       <h3 className="text-center lg:text-start lg:px-14">Recent Blog Posts</h3>
-      <div className="flex flex-col items-center lg:flex lg:flex-row gap-5 h-full lg:px-14">
+      <div className="flex flex-col items-center lg:flex lg:flex-row gap-5 h-full lg:px-14 ">
         <div className="w-[75%] lg:w-1/2 object-cover h-full rounded-sm border-2 p-4">
           <img src={blogs[0].thumbnail} className="object-cover w-full h-full lg:h-[40vh] lg:object-contain" />
           <p className="text-[#6941C6]">sunday, 1 Jan 2023</p>
@@ -103,6 +104,9 @@ const BlogHome = () => {
               <button className="bg-[#ECFDF3] text-[#027A48] rounded-lg p-2 text-sm font-semibold">{blogs[1].category}</button>
             </div>
           </div>
+      </div>
+      <div>
+        <CardsList />
       </div>
     </div>
   );
